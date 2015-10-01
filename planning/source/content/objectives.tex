@@ -1,1 +1,29 @@
 \section{Mission Objectives}
+\subsection{Import}
+The aim is to support the import of data by parsing given files and validating the datatype of stored information.
+
+Example: If a field should contain an integer but contains a string this should be marked as wrong, parsing should
+resume at the next line.
+
+\subsection{Cleansing}
+Imported data should be marked as possibly incorrect if data in a field seems to be wrong.
+
+Example: Student IDs should be exactly 6 digits long, anything else should be marked as wrong.
+
+\subsection{Structuring}
+Data is validated logically to make sure there are no redundancies.
+
+Example: It is not necessary to store information about faculty in a table of departments, if personnel data is
+stored in a separate table.
+
+\subsection{Querying / Reporting}
+The database can be queried for different kinds of information and is able to generate reports.
+
+Example: The administrator can search for faculty, lecturers, rooms, times, departments and more.
+
+\subsection{Update}
+The database will accept updates if they are correct and do not violate any process rules. Otherwise the database
+will not accept the data.
+
+Example: If the administrator wants to put Prof. X at room Y at time Z, but has placed Prof. A there at the same
+time, this query will yield an error.
