@@ -1,0 +1,15 @@
+Protokoll zum 1. Projekttreffen 01.10.2015 | 9:30 Uhr 
+
+Teilnehmer: David Mändlen, Alessandro Ribul Moro, Fatih Emin Sahin
+
+Ziel: Definition von Mission Statement & Mission Objectives
+
+Frage 1: 
+Müssen die zur Verfügung gestellten Daten als erstes gereinigt 
+werden und dann importiert werden oder muss das DBMS diese Daten bereinigen? 
+Oder müssen die Views nur bereinigt dargestellt werden?
+
+Frage 2:
+Müssen alle Studienordnungen verwaltet werden?
+
+
