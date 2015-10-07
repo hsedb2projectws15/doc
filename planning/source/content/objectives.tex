@@ -1,13 +1,15 @@
 \section{Mission Objectives}
 \subsection{Structuring}
-Data will be stored in a manner that reduces the possibility of conflicts. The stored data
+Data will be stored in a manner that reduces the possibility of inconsistencies. The stored data
 will contain information about lecturers, lectures, rooms and times. Possible restrictions
 will be honored.
 
-Example: If lecture A can only be held in room B at time C for Semester D this will be the only valid combination.
+Example: If a restriction requires a specific room but the room is non-existent, this
+will result in an error.
 
 \subsection{Querying / Reporting}
-The database can be queried for different kinds of information and is able to generate reports.
+The database can be queried for different kinds of information and is able to generate the reports
+specified by the client.
 
 Example: The administrator can search for faculty, lecturers, rooms, times, departments and more.
 
@@ -15,5 +17,5 @@ Example: The administrator can search for faculty, lecturers, rooms, times, depa
 The database will accept updates if they are correct and do not violate any process rules. Otherwise the database
 will not accept the data.
 
-Example: If the administrator wants to put Prof. X at room Y at time Z, but has placed Prof. A there at the same
-time, this query will yield an error.
+Example: If a restriction puts a lecture at midnight, the restriction would violate the working hours of the
+university and therefore will result in an error.
