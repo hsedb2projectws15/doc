@@ -5,36 +5,28 @@ The user views for the MRS database are given in table \ref{tab:userviews}.
 
 \begin{table}[h]
 	\centering
-	\begin{tabularx}{\textwidth}{XXX}
-		Data & Access Type & University Administrator\\
+	\begin{tabularx}{\textwidth}{XXXXX}
+		Data & Access Type & Scheduler & Rectorate & Restrictions Manager\\
 		\toprule
-				& Maintain	& X\\
-		Department	& Query		& X\\
-				& Report	& X\\
+				& Maintain	& $-$ & X & $-$ \\
+		Department	& Query		& X & X & $-$ \\
+				& Report	& X & X & $-$ \\
 		\midrule
-				& Maintain	& X\\
-		Lecturers	& Query		& X\\
-				& Report	& X\\
+				& Maintain	& $-$ & X & X \\
+		Professors	& Query		& X & X & X \\
+				& Report	& X & X & X \\
 		\midrule
-				& Maintain	& X\\
-		Workload	& Query		& X\\
-				& Report	& X\\
+				& Maintain	& $-$ & X & X \\
+		Lecturers	& Query		& X & X & X \\
+				& Report	& X & X & X \\
 		\midrule
-				& Maintain	& X\\
-		Rooms		& Query		& X\\
-				& Report	& X\\
+				& Maintain	& $-$ & X & $-$ \\
+		Lecture		& Query		& X & X & $-$ \\
+				& Report	& X & X & $-$ \\
 		\midrule
-				& Maintain	& X\\
-		Times		& Query		& X\\
-				& Report	& X\\
-		\midrule
-				& Maintain	& X\\
-		Tasks		& Query		& X\\
-				& Report	& X\\
-		\midrule
-				& Maintain	& X\\
-		Semesters	& Query		& X\\
-				& Report	& X\\
+				& Maintain	& X & X & X \\
+		Event		& Query		& X & X & X \\
+				& Report	& X & X & X \\
 	\end{tabularx}
 	\caption{User Views}
 	\label{tab:userviews}
