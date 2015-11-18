@@ -5,28 +5,28 @@ The user views for the MRS database are given in table \ref{tab:userviews}.
 
 \begin{table}[h]
 	\centering
-	\begin{tabularx}{\textwidth}{XXXXX}
-		Data & Access Type & Scheduler & Rectorate & Restrictions Manager\\
+	\begin{tabularx}{\textwidth}{XXXXXXX}
+		Data & Access Type & Schedule & Workload & Time Recording & Course & Service \\
 		\toprule
-				& Maintain	& $-$ & X & $-$ \\
-		Department	& Query		& X & X & $-$ \\
-				& Report	& X & X & $-$ \\
+				& Maintain	& $-$ 	& $-$	& $-$	& $-$ 	& $-$	\\
+		Department	& Query		& X 	& $-$	& $-$	& $-$ 	& $-$	\\
+				& Report	& X 	& $-$	& $-$	& $-$ 	& $-$	\\
 		\midrule
-				& Maintain	& $-$ & X & X \\
-		Professors	& Query		& X & X & X \\
-				& Report	& X & X & X \\
+				& Maintain	& $-$ 	& X 	& $-$	& $-$	& $-$	\\
+		Professors	& Query		& X 	& X 	& $-$	& $-$	& $-$	\\
+				& Report	& X 	& X 	& $-$	& $-$	& $-$	\\
 		\midrule
-				& Maintain	& $-$ & X & X \\
-		Lecturers	& Query		& X & X & X \\
-				& Report	& X & X & X \\
+				& Maintain	& $-$ 	& $-$ 	& $-$	& $-$	& $-$	\\
+		Lecturers	& Query		& X 	& $-$	& $-$	& $-$	& $-$	\\
+				& Report	& X 	& $-$	& $-$	& $-$	& $-$	\\
 		\midrule
-				& Maintain	& $-$ & X & $-$ \\
-		Lecture		& Query		& X & X & $-$ \\
-				& Report	& X & X & $-$ \\
+				& Maintain	& $-$ 	& $-$	& $-$	& X	& $-$	\\
+		Lecture		& Query		& X 	& $-$	& $-$	& X	& X	\\
+				& Report	& X 	& $-$	& $-$	& X	& X	\\
 		\midrule
-				& Maintain	& X & X & X \\
-		Event		& Query		& X & X & X \\
-				& Report	& X & X & X \\
+				& Maintain	& X 	& $-$	& $-$	& $-$	& $-$	\\
+		Event		& Query		& X 	& $-$	& X	& X	& X	\\
+				& Report	& X 	& $-$	& X	& X	& X	\\
 	\end{tabularx}
 	\caption{User Views}
 	\label{tab:userviews}
